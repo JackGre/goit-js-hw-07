@@ -7,8 +7,6 @@ const ingredients = [
     'Приправы',
   ];
 
-
-
 const ingredientsLinkEl = document.querySelector('#ingredients');
 
 const ingredientsLinkElementEl = links => {
@@ -20,4 +18,4 @@ const ingredientsLinkElementEl = links => {
 };
 const elements = ingredientsLinkElementEl(ingredients)
 ingredientsLinkEl.append(...elements);
-console.log(elements)
+

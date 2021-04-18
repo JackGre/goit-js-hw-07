@@ -15,3 +15,23 @@ const images = [
       alt: 'Group of Horses Running',
     },
   ];
+
+
+ 
+
+    const galleryEl = document.querySelector('#gallery');
+    const galleryLinkItem = images.map(image => {
+    const addLink = document.createElement('li');
+    addLink.insertAdjacentHTML('afterbegin', `<img src = ${image.url} alt = ${image.alt}>`)
+    return addLink;
+});
+galleryEl.append(...galleryLinkItem)
+console.log(galleryLinkItem)
+
+
+  
+ 
+
+
+ 
+

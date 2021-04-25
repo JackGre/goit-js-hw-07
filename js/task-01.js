@@ -34,7 +34,9 @@ for(let i = 0; i < itenEl.length; i += 1) {
     console.log(`☢ Категория: ${nameItem}`)
     const quantityLinkEl = itenEl[i].querySelectorAll('li');
     console.log(`☣ Количество элементов: ${quantityLinkEl.length}`)
-}    
+} 
+
+
 
 
 

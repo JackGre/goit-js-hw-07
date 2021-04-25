@@ -16,22 +16,20 @@ const images = [
     },
   ];
 
+  addGallery(images);
 
  
-
+  function addGallery(elements) {
     const galleryEl = document.querySelector('#gallery');
-    const galleryLinkItem = images.map(image => {
-    const addLink = document.createElement('li');
-    addLink.insertAdjacentHTML('afterbegin', `<img src = ${image.url} alt = ${image.alt}>`)
-    return addLink;
-});
-galleryEl.append(...galleryLinkItem)
-console.log(galleryLinkItem)
+
+    const galleryLinkItem = elements.map(image => {
+      return `<li><img src=${image.url} alt=${image.alt} width=400 height=300></li>`;
+    }).join('');
+
+    galleryEl.insertAdjacentHTML('afterbegin', galleryLinkItem);
+  }
 
 
-  
- 
 
 
- 
 
